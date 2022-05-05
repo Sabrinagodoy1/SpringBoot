@@ -2,6 +2,8 @@ package com.generation.farmacia.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,11 +42,11 @@ public class CategoriaController {
 	 return ResponseEntity.ok(repository.findAllByTipoContainingIgnoreCase(tipo));
 	 }
 	 @PostMapping
-	 public ResponseEntity<Categoria> post(@RequestBody Categoria categoria){
+	 public ResponseEntity<Categoria> post(@Valid @RequestBody Categoria categoria){
 		 return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
 	 }
 	 @PutMapping
-	 public ResponseEntity<Categoria> put (@RequestBody Categoria categoria){
+	 public ResponseEntity<Categoria> put (@Valid@RequestBody Categoria categoria){
 		 return ResponseEntity.status(HttpStatus.OK).body(repository.save(categoria));
 	 }
 	 @DeleteMapping("/{id}")
