@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.generation</groupId>
-	<artifactId>lojadegame</artifactId>
+	<artifactId>lojademusica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lojadegame</name>
-	<description>projeto feito na generation Brasil para praticar Spring e crud</description>
+	<name>Loja de Musica</name>
+	<description>treinando minhas habilidades no spring e crud</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -46,15 +46,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-		</dependency>
-
 	</dependencies>
 
 	<build>
